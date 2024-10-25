@@ -6,7 +6,7 @@ import Pran from './pran'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const username = "Pranjeet"
   return (
     <>
       <Pran/>
@@ -19,7 +19,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <h1>Hello Pranjeet</h1>
+      <h1>Hello {username}</h1>
       <h3>This is your React App</h3>
       <p>There is two way to create folders in react to do projects -</p>
       <ol>
