@@ -2,14 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Card from './components/Card'
 
 function App() {
+  
   const [count, setCount] = useState(0)
 
   return (
     <>
       <h1 className="bg-cyan-950 p-4 rounded-lg">Tailwind Test</h1>
-      <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+<figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
         <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="https://avatarfiles.alphacoders.com/325/thumb-1920-325764.jpg" alt="" width="384" height="512"></img>
         <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
       <blockquote>
@@ -29,6 +31,8 @@ function App() {
       </figcaption>
   </div>
 </figure>
+
+
 <div class="flex p-6 font-mono">
   <div class="flex-none w-48 mb-10 relative z-10 before:absolute before:top-1 before:left-1 before:w-full before:h-full before:bg-teal-400">
     <img src="https://www.footlocker.ph/media/wysiwyg/Infinite_1200x1200.jpg" alt="" class="absolute z-10 inset-0 w-full h-full object-cover rounded-lg" loading="lazy" />
@@ -100,29 +104,57 @@ function App() {
   </form>
 </div>
 
-<div className=" w-72 flex flex-col rounded-xl glass  min-h-72 mt-3 ">
-          <div>
-            <img
-              src="https://media4.giphy.com/media/1gbqIc1fK8QgR3bHL7/giphy.gif?cid=790b7611a2f696d51a46ce892e420e77735707466a4abd3b&rid=giphy.gif&ct=g"
-              alt="test"
-              width="300"
-              height="300"
-              className="rounded-t-xl w-full"
-            />
-          </div>
-          <div className="flex flex-col py-3 px-3 pb-7 -mt-4 bg-black rounded-b-xl ">
-            <div className="flex justify-between">
-              <h1 className="font-RubikBold ">Bored ape nft accidental</h1>
-              <h1 className="font-bold font-RubikBold">Price</h1>
+
+<div className='flex justify-around max-md:flex-wrap max-sm:flex-wrap'>
+<Card username={"https://media4.giphy.com/media/1gbqIc1fK8QgR3bHL7/giphy.gif?cid=790b7611a2f696d51a46ce892e420e77735707466a4abd3b&rid=giphy.gif&ct=g"}/>
+<Card username={"https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnVjYnZjMXhhMzJxa2htbDlvemRhZzgxdnh0ejVnZDJkcGMwY3BzeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qF2y0VXvbJV9V3ggC5/giphy.gif"}/>
+</div>
+
+
+
+<div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+          <div className="grid gap-5 row-gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="px-12 text-center sm:px-0">
+              <div className="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-black  sm:w-12 sm:h-12">
+                <p>icon</p>
+              </div>
+              <h6 className="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">Lorem ipsum</h6>
+              <div className="mb-2 text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </div>
             </div>
-            <div className="flex  justify-between font-mono">
-              <p>#345</p>
-              <p>0.01</p>
+            <div className="px-12 text-center sm:px-0">
+              <div className="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-black  sm:w-12 sm:h-12">
+                <p>icon</p>
+              </div>
+              <h6 className="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">Lorem</h6>
+              <div className="mb-2 text-gray-400">
+                Lorem ipsum dolor, sit amet consectetur adipisicing
+              </div>
+            </div>
+            <div className="px-12 text-center sm:px-0">
+              <div className="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-black  sm:w-12 sm:h-12">
+                <p>icon</p>
+              </div>
+              <h6 className="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">Lorem ipsum</h6>
+              <div className="mb-2 text-gray-400">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              </div>
+            </div>
+            <div className="px-12 text-center sm:px-0">
+              <div className="flex items-center justify-center w-10 h-10 mx-auto mb-4 rounded-full bg-black  sm:w-12 sm:h-12">
+                <p>icon</p>
+              </div>
+              <h6 className="mb-2 text-sm font-bold leading-5 tracking-wider uppercase">Lorem ipsum</h6>
+              <div className="mb-2 text-gray-400">
+                Lorem ipsum dolor, sit amet consectetur adipisicing{' '}
+              </div>
             </div>
           </div>
         </div>
     </>
   )
 }
+      
 
 export default App
