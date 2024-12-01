@@ -6,6 +6,7 @@ import Root from './Root'
 import { Contact, Home, About, User } from './components'
 import Github from './components/Github/Github'
 
+
 const router = createBrowserRouter([
   {
     path: '/',
