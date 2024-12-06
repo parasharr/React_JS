@@ -1,10 +1,14 @@
+import AddTodo from "./components/addTodo"
+import Todos from "./components/Todos"
+
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-     
-    </>
+    <div className="items-center bg-center">
+     <AddTodo />
+     <Todos />
+    </div>
   )
 }
 
