@@ -5,7 +5,7 @@ import service from '../../appwrite/authconfing'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
-function Post({post}) {
+function PostForm({post}) {
     const {register, handleSubmit, watch, setValue, control, getValues} = useForm({
         defaultValues: {
             title: post ?.title || '',
@@ -124,4 +124,4 @@ function Post({post}) {
     )
 }
 
-export default Post
+export default PostForm
