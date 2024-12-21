@@ -6,7 +6,15 @@ import { Provider } from 'react-redux'
 import store from "./store/store.js"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login from './components/Login.jsx'
-import { AuthLayout } from './components/index.js'
+import { AuthLayout} from './components/index.js'
+import Home from "./pages/Home.jsx"
+import LogIn from "./pages/LogIn.jsx"
+import Signup from './pages/Signup.jsx'
+import AddPost from './pages/AddPost.jsx'
+import AllPost from './pages/AllPost.jsx'
+import EditPost from './pages/EditPost.jsx'
+import Post from './pages/Post.jsx'
+
 
 
 const router = createBrowserRouter([
@@ -16,13 +24,13 @@ const router = createBrowserRouter([
     children: [
         {
             path: "/",
-            element: <Home />,
+            element: <Home />
         },
         {
             path: "/login",
             element: (
                 <AuthLayout authentication={false}>
-                    <Login />
+                    <LogIn />
                 </AuthLayout>
             ),
         },
@@ -39,7 +47,7 @@ const router = createBrowserRouter([
             element: (
                 <AuthLayout authentication={true}>
                     {" "}
-                    <AllPosts />
+                    <AllPost />
                 </AuthLayout>
             ),
         },
